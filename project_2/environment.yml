@@ -3,11 +3,17 @@ channels:
   - conda-forge
 dependencies:
   - python=3.11
+  - numpy
+  - packaging
+  - ipykernel
+  - pytorch
+  - torchvision
+  - cpuonly
   - pip
   - pip:
       - langchain==0.3.25
       - langchain-community==0.3.24
-      - sentence-transformers==4.1.0
+      - sentence-transformers==4.1.0 --no-deps
       - streamlit==1.45.1
       - openai==1.79.0
       - faiss-cpu==1.11.0
